@@ -59,7 +59,7 @@ Synopsis: In this exercise, you will set up your environment for use in the rest
 
 ### Task 1: Download GitHub resources
 
-1.  Open a browser window to the cloud workshop GitHub repository (<https://github.com/Microsoft/MCW-Azure-Security-Privacy-and-Compliance>).
+1.  Open a browser window to the cloud workshop GitHub repository (<https://github.com/microsoft/MCW-Security-baseline-on-Azure>).
 
 2.  Select **Clone or download**, then select **Download Zip**.
 
