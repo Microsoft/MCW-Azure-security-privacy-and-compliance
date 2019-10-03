@@ -213,7 +213,7 @@ Synopsis: In this exercise, attendees will utilize Azure SQL features to data ma
 
     ![The Server parameter is listed under ADO.NET (SQL authentication) on the ADO.NET tab.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image21.png "Note the Server parameter")
 
-6.  Open **SQL Server Management Studio**.
+6.  Open **Azure Data Studio**.
 
 7.  Enter the database server name from above.
 
@@ -231,45 +231,39 @@ Synopsis: In this exercise, attendees will utilize Azure SQL features to data ma
 
     ![New Firewall Rule Dialog with your Internet IP Address](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image23.png)
 
-12. Right-click **Databases**, and select **Import Data-tier Application**.
+12. Right-click **Databases**, and select **Data-tier Application wizard**.
 
     ![Introduction is highlighted on the left side of the Import Data-tier Application dialog box, and Next is highlighted at the bottom.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image24.png "Select Import Data-tier Application")
 
-13. In the Introduction dialog, select **Next**.
+13. In the Introduction dialog, selct **Create a database from a .bacpac file [Import Bacpac]** and then select **Next**.
 
-14. Select **Browse**, navigate to the extracted **Database** directory, and select the **Insurance.bacpac** file.
+14. In the **File location** field, navigate to the extracted **Database** directory, and select the **Insurance.bacpac** file.
 
     ![Insurance.bacpac is selected in the Browse dialog box.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image25.png "Select Insurance.bacpac")
 
-15. Select **Open**.
+15. Select **Next**.
 
-16. On the **Import Settings** dialog, select **Next**.
+16. On the **Summary** dialog, select **Import** and the database will deploy to Azure.
 
-17. On the **Database Settings** dialog, select **Next**.
-
-> **Note**: If you get an error, close and re-open SQL Management Studio try the import again. If that does not work, you may need to download the latest SQL Management Studio from [here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017). In some instances, the latest version may not work, version 17.3 is known to deploy the package properly.  You should also be aware that bacpac files exported from some SQL Server instances cannot be deployed to Azure SQL Servers.  We have also included a .bak file of the Insurance database that you can use to restore from.
-
-18. Select **Finish** and the database will deploy to Azure.
-
-19. Once completed, select **Close**.
+17. Once completed (it could take ~2min), select **Close**.
 
     ![Results is highlighted on the left side of the Import Data-tier Application dialog box, and at right, many items are listed under Operation Complete. Next is highlighted at the bottom.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image26.png "View the results")
 
-20. In **SQL Management Studio**, select **File-\>Open-\>File**.
+18. In **Azure Data Studio**, select **File-\>New Query**.
 
-    ![In SQL Management Studio, Open is selected in the File menu, and File is selected in the shortcut menu.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image27.png "Open a file")
+    ![In Azure Data Studio, New Query is selected in the File menu.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image27.png "Open a file")
 
-21. Browse to the extracted GitHub folder, select the **\\Hands-on lab\\Database\\00\_CreateLogin.ps1** file.
+19. Browse to the extracted GitHub folder, copy the content of the **\\Hands-on lab\\Database\\00\_CreateLogin.sql** file.
 
-22. Ensure that the **master** database is selected.
+20. Ensure that the **master** database is selected.
 
-23. Run the script to create a login called **agent**.
+21. Run the script to create a login called **agent**.
 
-24. Browse to the extracted folder, select the **\\Hands-on lab\\Database\\01\_CreateUser.ps1** file.
+22. Browse to the extracted folder, select the **\\Hands-on lab\\Database\\01\_CreateUser.sql** file.
 
-25. Ensure that the **Insurance** database is selected.
+23. Ensure that the **Insurance** database is selected.
 
-26. Run the script to create a non-admin user called **agent**.
+24. Run the script to create a non-admin user called **agent**.
 
 ### Task 2: Test the web application solution
 
