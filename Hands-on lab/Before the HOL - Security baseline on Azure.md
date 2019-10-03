@@ -46,7 +46,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 2. A machine with the following software installed:
 
     - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-    - [SQL Management Studio 2017](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
+    - [Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download)
     - [Power BI Desktop](https://powerbi.microsoft.com/en-us/downloads/)
 
 3. An Office 365 email account or other email-based account
