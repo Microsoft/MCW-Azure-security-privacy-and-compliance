@@ -109,7 +109,7 @@ The solution begins by creating a jump machine. This jump machine is used to acc
 2. A machine with the following software installed:
 
     - Visual Studio 2017
-    - SQL Management Studio 2017
+    - Azure Data Studio + the SQL Server Dacpac (`microsoft.dacpac`) extension
     - Power BI Desktop
 
 ## Exercise 1: Implementing Just-In-Time (JIT) access
@@ -245,7 +245,7 @@ Synopsis: In this exercise, attendees will utilize Azure SQL features to data ma
 
 16. On the **Summary** dialog, select **Import** and the database will deploy to Azure.
 
-17. Once completed (it could take ~2min), select **Close**.
+17. Once completed (it could take ~2min), you should be able to see the **Insurance** database successfuly imported.
 
     ![Results is highlighted on the left side of the Import Data-tier Application dialog box, and at right, many items are listed under Operation Complete. Next is highlighted at the bottom.](images/Hands-onlabstep-bystep-Azuresecurityprivacyandcomplianceimages/media/image26.png "View the results")
 
